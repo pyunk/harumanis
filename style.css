@@ -9,11 +9,12 @@ body, html, div, header, img, a, ul, li, section, footer {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    font-size: 16px;
 }
 
 /* Highlight class for colored words */
 .highlight {
-    color: #FFA500; /* Orange color */
+    color: #FFA500;
     font-weight: bold;
 }
 
@@ -184,27 +185,6 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 768px) {
-    .about-title {
-        font-size: 2.5rem;
-    }
-
-    .about-left, .about-right {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .about-text {
-        max-width: 100%;
-        text-align: center;
-    }
-}
-
 /* Shop Section */
 .shop-section {
     background: linear-gradient(135deg, #ffffff, #ffe0b2);
@@ -318,17 +298,6 @@ body {
 .receipt p strong {
     font-weight: bold;
     color: #1a1a1a;
-}
-
-@media (max-width: 768px) {
-    .shop-content {
-        flex-direction: column;
-    }
-
-    .shop-left,
-    .shop-right {
-        width: 100%;
-    }
 }
 
 /* Contact Section */
@@ -537,22 +506,6 @@ body {
     transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-    .location-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .location-text {
-        text-align: center;
-    }
-
-    .location-image img {
-        max-width: 100%;
-    }
-}
-
 /* Footer Styling */
 .footer {
     background-color: #1a1a1a;
@@ -614,18 +567,189 @@ body {
     color: #ccc;
 }
 
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav ul {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .cta-button img {
+        height: 30px;
+    }
+
+    /* Main Section */
+    .main-section {
+        padding: 80px 10px;
+        font-size: 1.5rem;
+    }
+
+    .main-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* About Section */
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .about-left, .about-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Shop Section */
+    .shop-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .shop-title {
+        font-size: 2rem;
+    }
+
+    .shop-form {
+        padding: 20px;
+    }
+
+    .shop-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Receipt Section */
+    .receipt {
+        padding: 15px;
+    }
+
+    .receipt h2 {
+        font-size: 1.25rem;
+    }
+
+    .receipt p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .contact-person {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-person img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-person h2 {
+        font-size: 1.25rem;
+    }
+
+    .contact-person p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Location Section */
+    .location-title {
+        font-size: 2rem;
+    }
+
+    .location-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .location-text {
+        text-align: center;
+    }
+
+    .direction-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+    }
+
     .footer-content {
         flex-direction: column;
-        text-align: center;
+        gap: 20px;
     }
 
-    .footer-section {
-        text-align: center;
+    .footer-section h3 {
+        font-size: 1.25rem;
     }
-}
 
-/* Adjust scroll padding for sections */
-html {
-    scroll-padding-top: 20px;
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
 }
