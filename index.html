@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM Perlis Harumanis Mangoes</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="mango.png" alt="Mango Logo">
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </nav>
+
+        <div class="cta-button">
+            <a href="https://ir.uitm.edu.my/id/eprint/59952/1/59952.pdf">
+                <img src="uitm.png" alt="UITM Button">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Main Section -->
+        <section id="main" class="section main-section">
+            <h1 id="time">--:--:-- --</h1>
+            <h2 id="date">Loading Date...</h2>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h1 class="about-title">UiTM PERLIS <span class="highlight">HARUMANIS</span> MANGOES</h1>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image">
+                        <img src="mango1.jpg" alt="Harumanis Mangoes Left">
+                    </div>
+                    <div class="about-text">
+                        <p><span class="highlight">Harumanis</span> mangoes are a premium variety grown exclusively in the northern state of Perlis, Malaysia. 
+                            Renowned for their exceptional sweetness, rich aroma, and unique flavor, these mangoes are a true delicacy.</p>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-text">
+                        <p>They are characterized by their <span class="highlight">intense sweetness</span>, captivating fragrance, and a perfect balance of sweetness 
+                            and tanginess. <span class="highlight">Harumanis</span> mangoes are typically oval-shaped with a vibrant yellow-orange skin when ripe.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="mango2.jpg" alt="Harumanis Mangoes Right">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section shop-section">
+            <div class="shop-content">
+                <div class="shop-left">
+                    <h1 class="shop-title">Buy Fresh <span class="highlight">Harumanis</span> Mangoes</h1>
+                    <img src="mango3.jpg" alt="Harumanis Mangoes">
+                </div>
+
+                <div class="shop-right">
+                    <form class="shop-form" id="shopForm">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="address" id="address" placeholder="Your Address" rows="3" required></textarea>
+                        <select name="weight" id="weight" required>
+                            <option value="" disabled selected>Select Mango Weight</option>
+                            <option value="1kg">1kg - RM65</option>
+                            <option value="3kg">3kg - RM120</option>
+                            <option value="5kg">5kg - RM200</option>
+                        </select>
+                        <button type="submit">Purchase</button>
+                    </form>
+
+                    <!-- Receipt Section -->
+                    <div id="receipt" class="receipt">
+                        <h2>Purchase Receipt</h2>
+                        <p><strong>Name:</strong> <span id="receiptName"></span></p>
+                        <p><strong>Phone:</strong> <span id="receiptPhone"></span></p>
+                        <p><strong>Email:</strong> <span id="receiptEmail"></span></p>
+                        <p><strong>Address:</strong> <span id="receiptAddress"></span></p>
+                        <p><strong>Mango Weight:</strong> <span id="receiptWeight"></span></p>
+                        <p><strong>Total Price:</strong> RM<span id="receiptPrice"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-content">
+                <h1 class="contact-title">Contact Us</h1>
+                <p class="contact-description">
+                    Have questions or want to visit our farm? Reach out to our team or send us a message!
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-person">
+                        <img src="kurt.jpg" alt="Contact Person">
+                        <h2>Sufyan Nizam</h2>
+                        <p>Farm Manager</p>
+                        <p>Email: pyunkurt@uitmperlis.com</p>
+                        <p>Phone: 04-988 2481</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+                        <input type="text" name="subject" id="contact-subject" placeholder="Subject" required>
+                        <textarea name="message" id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="section location-section">
+            <h1 class="location-title">
+                <img src="mango.png" alt="Mango Icon" class="title-icon"> 
+                Visit Our Farm at <span class="highlight">UiTM Perlis</span>
+            </h1>
+
+            <div class="location-content">
+                <div class="location-image">
+                    <img src="mango4.jpg" alt="Harumanis Mangoes">
+                </div>
+
+                <div class="location-text">
+                    <p>
+                        Visit our store located at <span class="highlight">UiTM Perlis</span> to get fresh Harumanis mangoes and explore our farm. 
+                        Click the button below to get directions!
+                    </p>
+                    <a href="https://www.google.com/maps/place/Unit+Ladang/@6.4520727,100.2775406,17z/data=!3m1!4b1!4m6!3m5!1s0x304ca2bfdf10c877:0xb03c01d0f162e798!8m2!3d6.4520674!4d100.2801155!16s%2Fg%2F11f24w93vm?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" 
+                       class="direction-btn" 
+                       target="_blank">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing the freshest <span class="highlight">Harumanis</span> mangoes from UiTM Perlis. Visit us to experience the best!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: pyunkkurt@uitmperlis.com</p>
+                <p>Phone: 04-988 2481</p>
+                <p>Address: UiTM Perlis, Malaysia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 UiTM Perlis <span class="highlight">Harumanis</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
